@@ -1,0 +1,261 @@
+.hero {
+  height: 100vh;
+  background: url("../img/hero-bg.svg") no-repeat left -220px bottom -248px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  &.cards-active {
+    display: none;
+  }
+}
+
+.hero__wrap {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  padding-left: 9%;
+  z-index: 1;
+}
+
+.hero__suptitle {
+  display: inline;
+  position: relative;
+  // left: 45%;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 69px;
+  color: #ffffff;
+}
+
+.hero__title {
+  display: inline;
+  font-family: "Gilroy", sans-serif;
+  position: relative;
+  // left: 45%;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 177px;
+  line-height: 217px;
+  color: #ffffff;
+}
+
+.topscroll {
+  display: flex;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 9%;
+  z-index: 0;
+
+  &.grid {
+  }
+
+  &.active {
+    position: absolute;
+    right: 20px;
+
+    .card {
+      width: 314px;
+      margin-left: 46px;
+      height: 432px;
+      display: none;
+      &:nth-child(odd) {
+        margin-top: 0;
+      }
+      &:nth-child(1) {
+        display: block;
+      }
+      &:nth-child(2) {
+        display: block;
+      }
+    }
+
+    .card__name_subtitle {
+      display: none;
+    }
+
+    .card__explore {
+      display: none;
+    }
+
+    .card__label {
+      display: none;
+    }
+  }
+}
+
+.card {
+  background: linear-gradient(180deg, #101038 0%, rgba(25, 31, 93, 0) 100%);
+  transition: all 0.5s ease;
+  border-radius: 30px;
+  padding: 31px 30px 41px;
+  flex-grow: 1;
+  max-width: 407px;
+  width: 407px;
+  position: relative;
+  height: 559px;
+  margin-left: 131px;
+  &:nth-child(odd) {
+    margin-top: 141px;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.card__head {
+  display: flex;
+  align-items: center;
+}
+
+.card__icon {
+  width: 117px;
+}
+
+.card__name {
+  margin-left: 16px;
+}
+
+.card__name_title {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0.235em;
+  text-transform: uppercase;
+  color: #d6d9f8;
+}
+
+.card__name_subtitle {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  position: relative;
+  color: #bfe582;
+  padding-left: 12px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: #bfe582;
+  }
+}
+
+.card__explore {
+  background: #ff564e;
+  box-shadow: 0px 30px 70px rgba(255, 86, 78, 0.61);
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.235em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -61px;
+  bottom: -61px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 30px 90px rgba(255, 86, 78, 0.95);
+  }
+}
+
+.card__particular {
+  position: absolute;
+  bottom: -16px;
+  right: -114px;
+}
+
+.card__label {
+  width: 243px;
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  background: #414bff;
+  box-shadow: 9px 0px 40px 0px #0c49d7;
+  padding: 12px 22px 17px 22px;
+  border-radius: 4px 0 0 4px;
+}
+
+.card__label_percent {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 38px;
+  color: #ffffff;
+  span {
+    font-size: 20px;
+  }
+}
+
+.card__label_text {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+  margin-top: -7px;
+}
+
+.cards-btn {
+  cursor: pointer;
+  width: 68px;
+  position: absolute;
+  right: 80px;
+  bottom: 115px;
+  z-index: 3;
+  transition: transform .3s ease;
+  &:hover {
+    .cards-btn__text {
+      color: #fff;
+    }
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+}
+
+.cards-btn__text {
+  margin-top: 5px;
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.19em;
+  text-transform: uppercase;
+  transition: all .3s ease;
+  color: rgba(255, 255, 255, 0.5);
+}

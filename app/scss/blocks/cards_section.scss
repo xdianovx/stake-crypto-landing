@@ -1,0 +1,84 @@
+.cards-section {
+  margin-top: 146px;
+}
+
+.cards-section__wrapper {
+  margin-top: 15px;
+}
+
+.cards-section__wrap {
+  display: grid;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  &-odd {
+    grid-template-columns: repeat(5, 234px);
+  }
+
+  &-even {
+    grid-template-columns: repeat(4, 234px);
+  }
+
+  .card {
+    max-width: 234px;
+    height: 322px;
+    margin-bottom: 50px;
+    padding: 18px 17px 24px;
+    margin: 0;
+    &:nth-child(odd) {
+      margin-top: 0;
+    }
+
+    .card__particular {
+      display: none;
+    }
+
+    .card__name {
+      margin-left: 9px;
+    }
+
+    .card__name_title {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    .card__name_subtitle {
+      font-size: 10px;
+      line-height: 12px;
+      margin-top: 3px;
+      &::before {
+        top: 3px;
+      }
+    }
+    .card__icon {
+      width: 60px;
+      height: 60px;
+    }
+
+    .card__particular {
+      bottom: 0;
+      right: -93px;
+    }
+
+    .card__label {
+      max-width: 125px;
+      padding: 10px 18px 17px 22px;
+    }
+
+    .card__label_percent {
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    .card__label_text {
+      font-size: 10px;
+    }
+
+    .card__explore {
+      width: 71px;
+      height: 71px;
+      font-size: 10px;
+      left: -35px;
+      bottom: -20px;
+    }
+  }
+}

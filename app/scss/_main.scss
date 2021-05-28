@@ -1,0 +1,166 @@
+@import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/swiper/swiper-bundle";
+@import "../../node_modules/choices.js/src/styles/choices.scss";
+@import "../../node_modules/rangeslider-js/src/styles";
+
+*,
+*::before,
+*::after {
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body,
+html {
+  background: var(--main-bg);
+  font-family: "Graphik", sans-serif;
+  color: #fff;
+}
+
+.section {
+  padding-left: 45%;
+}
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title-main {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 69px;
+}
+
+.title-h3 {
+  font-family: "Gilroy", sans-serif;
+  padding-left: 58px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 3px;
+    height: 25px;
+    background-color: #fff;
+  }
+}
+.subtitle-main {
+  font-family: "Gilroy", sans-serif;
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #8bbcfe;
+  padding-left: 95px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 14px;
+    height: 3px;
+    width: 59px;
+    background: #8bbcfe;
+  }
+}
+.text-main {
+  font-family: "Graphik", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 184.69%;
+  color: #9393a8;
+
+  a {
+    display: inline;
+    color: #8bbbfe;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: -3px;
+      background-color: #8bbbfe;
+      height: 1px;
+    }
+  }
+}
+
+.backlink {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #6a6b86;
+  position: relative;
+  padding-left: 17px;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background-image: url(../img/backlink_chevron.svg);
+    width: 6px;
+    height: 11px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

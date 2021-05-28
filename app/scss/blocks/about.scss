@@ -1,0 +1,99 @@
+.about {
+}
+
+.about__subtitle {
+  margin-top: 28px;
+}
+
+.about__text {
+  margin-top: 25px;
+  max-width: 794px;
+}
+
+.about__icons {
+  margin-top: 62px;
+  .swiper-slide {
+    opacity: 0.2;
+    max-width: 142px;
+    transition: opacity 0.3s ease;
+  }
+
+  .swiper-slide-active {
+    opacity: 1;
+  }
+}
+
+// .about-icons-slider {
+//   overflow: visible;
+// }
+
+.about__icon {
+  //   width: 142px;
+}
+
+.about__running {
+  font-family: "Gilroy", sans-serif;
+  margin-top: 68px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 177px;
+  line-height: 204px;
+  -webkit-text-stroke: 1px rgba(84, 85, 124, 0.53);
+  -webkit-text-fill-color: transparent;
+}
+
+.about__title_h3 {
+  margin-top: 56px;
+}
+
+.about__text_beginning {
+  margin-top: 37px;
+  max-width: 650px;
+  margin-left: 193px;
+
+}
+
+
+.beginning {
+  position: relative;
+  margin-top: 134px;
+}
+
+.beginning__year {
+  position: absolute;
+  transform: rotate(-90deg);
+  font-size: 114px;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.beginning__img {
+  max-width: 794px;
+}
+
+.what-we-do {
+  padding-top: 153px;
+  position: relative;
+  overflow-x: hidden;
+
+}
+
+
+.what-we-do__subtitle {
+
+}
+
+.what-we-do__marquee {
+  width: 120%;
+  position: absolute;
+  top: 72px;
+  -webkit-text-stroke: 1px rgba(84, 85, 124, 0.53);
+  -webkit-text-fill-color: transparent;
+  font-weight: 300;
+font-size: 177px;
+}
+
+.what-we-do__text {
+  max-width: 784px;
+  margin-top: 23px;
+}

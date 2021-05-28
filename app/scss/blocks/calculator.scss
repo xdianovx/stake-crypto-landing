@@ -1,0 +1,194 @@
+.calculator {
+    padding-top: 200px;
+}
+
+.calculator-title {
+    text-transform: none;
+}
+
+.calculator-subtitle {
+    margin-top: 20px;
+}
+
+.calculator-text {
+    margin-top: 25px;
+}
+
+.calculator-item {
+    margin-top: 20px;
+    max-width: 925px;
+    width: 100%;
+}
+
+.calculator-item__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calculator-item__select {
+    max-width: 308px;
+    width: 100%;
+    height: 86px;
+    &:hover {
+        .choices__inner {
+            background: #0b0c2f;
+            box-shadow: 0px 6px 94px rgba(0, 0, 0, 0.65);
+        }
+        .choices:after {
+            border-color: #414bff transparent transparent transparent;
+        }
+    }
+    .choices__inner {
+        background: #050623;
+        border: 1px solid #0e0f2f;
+        border-radius: 4px;
+        font-family: "Gilroy", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 184.48%;
+        color: #9ca3d7;
+        transition: all 0.5s ease;
+    }
+
+    .choices__list--dropdown {
+    }
+}
+
+.choices[data-type*="select-one"]:after {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 16px 8.5px 0 8.5px;
+    border-color: #5c6e92 transparent transparent transparent;
+    margin-top: 0;
+    top: 26px;
+    transition: all 0.5s ease;
+    right: 35px;
+}
+.choices.is-open::after {
+    margin-top: 0 !important;
+}
+
+.choices__list--dropdown {
+    margin-top: 20px;
+    border: none;
+    background: #0b0c2f;
+    box-shadow: 0px 6px 94px rgba(0, 0, 0, 0.65);
+    border-radius: 4px;
+}
+
+.calculator-item__range {
+    margin-top: 73px;
+}
+
+.calculator-item__range {
+    .rangeslider {
+        height: 15px;
+    }
+    .rangeslider__fill__bg {
+        background: #27294d;
+        border-radius: 100px;
+        height: 100%;
+    }
+
+    .rangeslider__fill {
+        height: 100%;
+        background: linear-gradient(45.23deg, #414bff 0%, #1e3092 100%);
+        box-shadow: 0px 4px 34px rgba(130, 158, 255, 0.4);
+    }
+
+    .rangeslider__handle {
+        position: relative;
+        width: 49px;
+        height: 49px;
+        border: none;
+        background: transparent;
+        top: 15px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 49px;
+            height: 49px;
+            background-image: url(../img/range.svg);
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.calculator-sum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.calculator-sum__left {
+    font-family: "Gilroy", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 68px;
+    letter-spacing: 0.065em;
+    color: #ffffff;
+}
+
+.calculator-sum__right {
+    font-family: "Gilroy", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 68px;
+    line-height: 82px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.calculator-footer {
+    overflow: hidden;
+    margin-top: 82px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calculator-footer__item {
+    background: #27294d;
+    // width: 33%;
+    flex-grow: 1;
+    padding: 21px 24px 22px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    &:last-child {
+        border: none;
+    }
+}
+
+.calculator-footer__item_price {
+    font-family: "Gilroy", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 112.48%;
+    color: #ffffff;
+}
+
+.calculator-footer__item_label {
+    font-family: "Gilroy", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 35px;
+    color: #717290;
+}
+
+.calculator-footer__item_name {
+    font-family: "Gilroy", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 35px;
+    color: #ffffff;
+}
