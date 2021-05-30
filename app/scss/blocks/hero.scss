@@ -46,6 +46,7 @@
 .topscroll {
   display: flex;
   align-items: center;
+  cursor: default !important;
 }
 
 .cards {
@@ -108,6 +109,7 @@
   position: relative;
   height: 559px;
   margin-left: 131px;
+  cursor: grab;
   &:nth-child(odd) {
     margin-top: 141px;
   }
@@ -272,6 +274,10 @@
     padding-left: 50px;
   }
 
+  .card__name_subtitle {
+    font-size: 15px;
+  }
+
   .card {
     height: 480px;
     max-width: 350px;
@@ -418,5 +424,57 @@
 
   .cards-btn {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topscroll {
+    justify-content: center;
+    margin-top: 0;
+    height: 100vh;
+  }
+  .hero__title {
+    font-size: 74px;
+    line-height: 91px;
+  }
+
+  .hero__suptitle {
+    font-size: 33px;
+    line-height: 40px;
+  }
+
+  .cards-mobile {
+    margin-top: 25px;
+  }
+
+  .swiper-pagination.cards-pagination {
+    bottom: -45px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero__title {
+    font-size: 68px;
+    line-height: 75px;
+  }
+
+  .hero__suptitle {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .cards-mobile .card {
+    width: 290px;
+  }
+
+  .cards-mobile .card__explore {
+    left: 15px;
+    bottom: 15px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .cards-mobile .card__label {
+    bottom: 18px;
   }
 }

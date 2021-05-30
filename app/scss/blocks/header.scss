@@ -69,6 +69,26 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 14px 25px;
+  }
+  .header__logo {
+    width: 108px;
+  }
+
+  .header__burger {
+    width: 26px;
+    &::before {
+      height: 2px;
+    }
+    &:after {
+      height: 2px;
+      width: 14px;
+    }
+  }
+}
+
 @keyframes burger {
   from {
     left: 0;

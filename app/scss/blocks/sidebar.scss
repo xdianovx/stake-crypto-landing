@@ -150,3 +150,50 @@
     margin-left: 100px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    max-width: none;
+    width: 100%;
+  }
+
+  .sidebar__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 130px;
+    justify-content: space-evenly;
+  }
+
+  .sidebar__logo {
+    margin-left: 0;
+  }
+
+  .sidebar__li {
+    padding-left: 0;
+    font-size: 33px;
+    line-height: 40px;
+    margin-bottom: 27px;
+  }
+
+  .sidebar__li.active::before {
+    width: 66px;
+    height: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100px;
+  }
+
+  .sidebar__socials {
+    margin-left: 0;
+  }
+
+  .sidebar__social {
+    width: 38px;
+    height: 38px;
+
+    img {
+      width: 16px;
+    }
+  }
+}

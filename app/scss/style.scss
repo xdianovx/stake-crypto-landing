@@ -1,6 +1,9 @@
 @import "./_vars.scss";
 @import "./fonts.scss";
 @import "./_main.scss";
+// Parts
+@import "./parts/select";
+@import "./parts/checkbox";
 // Blocks
 @import "./blocks/header.scss";
 @import "./blocks/sidebar.scss";

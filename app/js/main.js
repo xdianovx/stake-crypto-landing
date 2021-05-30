@@ -1,6 +1,5 @@
 // Plugins
 import VanillaTilt from "vanilla-tilt";
-import Choices from "choices.js";
 import rangesliderJs from "rangeslider-js";
 
 // Blocks
@@ -10,10 +9,12 @@ import blog from "./modules/blog";
 import navScroll from "./modules/nav_scroll";
 import card from "./modules/card";
 import cardsSection from "./modules/cards_section";
+import { select } from "./modules/select";
 
 window.addEventListener("DOMContentLoaded", () => {
   sidebar();
   about();
+  select();
   card();
   cardsSection();
   blog();
@@ -24,11 +25,6 @@ window.addEventListener("DOMContentLoaded", () => {
 VanillaTilt.init(document.querySelector(".beginning__img"), {
   max: 15,
   speed: 400,
-});
-
-const element = document.querySelector(".calculator-select");
-const choices = new Choices(element, {
-  searchEnabled: false,
 });
 
 const calcucatorRange = document.querySelector(".calculator-range");

@@ -419,7 +419,7 @@
               </div>
             </div>
           </div>
-          <div class="cards-pagination"></div>
+          <div class="swiper-pagination cards-pagination"></div>
         </div>
       </div>
     </section>
@@ -658,19 +658,56 @@
 
         <div class="calculator-item pl">
           <div class="calculator-item__top">
-            <div class="calculator-item__select">
-              <select name="" class="calculator-select" id="">
-                <option value="SOL">SOL</option>
-                <option value="SOL">SOL</option>
-                <option value="SOL">SOL</option>
-                <option value="SOL">SOL</option>
-                <option value="SOL">SOL</option>
-                <option value="SOL">SOL</option>
-              </select>
+            <div class="select">
+              <div class="select__header">
+                <div class="select__current select__item">
+                  <div class="select__item_icon">
+                    <img src="./img/card_icon.svg" alt="" srcset="" />
+                  </div>
+                  <p>Value 1</p>
+                </div>
+                <div class="select__close"></div>
+              </div>
+
+              <div class="select__body-wrap">
+                <div class="select__body">
+                  <div class="select__item">
+                    <div class="select__item_icon">
+                      <img src="./img/card_icon.svg" alt="" srcset="" />
+                    </div>
+                    <p>Value 2</p>
+                  </div>
+                  <div class="select__item">
+                    <div class="select__item_icon">
+                      <img src="./img/card_icon.svg" alt="" srcset="" />
+                    </div>
+                    <p>Value 3</p>
+                  </div>
+                  <div class="select__item">
+                    <div class="select__item_icon">
+                      <img src="./img/card_icon.svg" alt="" srcset="" />
+                    </div>
+                    <p>Value 4</p>
+                  </div>
+                  <div class="select__item">
+                    <div class="select__item_icon">
+                      <img src="./img/card_icon.svg" alt="" srcset="" />
+                    </div>
+                    <p>Value 5</p>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="compound__checkbox">Compound</div>
+            <div class="compound__checkbox">
+              <p>Compound</p>
+              <div class="checkbox__wrap">
+                <input type="checkbox" class="checkbox" id="checkbox" />
+                <label for="checkbox"></label>
+              </div>
+            </div>
           </div>
+
           <div class="calculator-item__range">
             <input
               type="range"

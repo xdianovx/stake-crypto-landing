@@ -193,6 +193,39 @@
   color: #ffffff;
 }
 
+.choices__list--dropdown {
+  z-index: 5;
+  box-shadow: 0px 6px 94px rgba(0, 0, 0, 0.65);
+  border-radius: 4px;
+}
+
+.choices__item {
+  &::after {
+    display: none;
+  }
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background: #0b0c2f;
+}
+
+.compound__checkbox {
+  display: flex;
+  align-items: center;
+  .checkbox__wrap {
+    height: 40px;
+  }
+  p {
+    margin-right: 26px;
+    font-family: "Gilroy", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px;
+    color: #ffffff;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .calculator {
     padding-top: 150px;

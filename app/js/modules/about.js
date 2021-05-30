@@ -32,7 +32,7 @@ const about = () => {
     scrollTrigger: {
       trigger: ".what-we-do__marquee",
       scrub: 1,
-      start: "top center",
+      start: "top top",
     },
     x: 300,
   });

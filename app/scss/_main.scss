@@ -10,7 +10,11 @@
   box-sizing: border-box;
 }
 
-body {
+main {
+  &.active {
+    visibility: hidden;
+    height: 0;
+  }
 }
 
 body,
@@ -213,14 +217,18 @@ img {
 
 @media screen and (max-width: 1200px) {
   main {
-    display: block !important;
+    display: none !important;
   }
 
   .section {
     padding: 0 20px;
     margin: 0 auto;
+    max-width: 768px;
   }
   .pl {
     margin-left: 0;
   }
+}
+
+@media screen and (max-width: 768px) {
 }

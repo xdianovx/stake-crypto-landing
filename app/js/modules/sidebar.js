@@ -1,11 +1,11 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-// import { CSSRulePlugin } from "gsap/CSSRulePlugin";
-// import { Draggable } from "gsap/Draggable";
+import { Draggable } from "gsap/Draggable";
 import { Swiper, Pagination, Autoplay } from "swiper";
+import { maw1200, maw1440, maw1650, maw768 } from "./globalvars";
 
 Swiper.use(Pagination, Autoplay);
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, Draggable);
 let tl = gsap.timeline();
 
 const sidebar = () => {
@@ -20,9 +20,6 @@ const sidebar = () => {
   const topscrollWrap = document.querySelector(".topscroll");
   const cards = gsap.utils.toArray(".puff");
   const showCardsGridBtn = document.querySelector(".cards-btn");
-  const maw1650 = window.matchMedia("(max-width: 1650px)").matches;
-  const maw1440 = window.matchMedia("(max-width: 1440px)").matches;
-  const maw1200 = window.matchMedia("(max-width: 1200px)").matches;
 
   // Топскролл
   let scrollAnim = gsap.to(cards, {
@@ -42,33 +39,32 @@ const sidebar = () => {
   });
 
   gsap.to(heroTitle, {
-    yPercent: 100,
-    xPercent: -100,
+    y: 400,
+    x: -400,
     opacity: 0,
     scrollTrigger: {
-      trigger: ".topscroll",
+      trigger: ".hero",
       start: "top top",
       scrub: 1,
-      invalidateOnRefresh: true,
     },
   });
 
   gsap.to(heroSuptitle, {
-    y: -500,
-    x: -500,
+    y: -400,
+    x: -400,
     opacity: 0,
     scrollTrigger: {
-      trigger: ".topscroll",
+      trigger: ".hero",
       start: "top top",
       scrub: 1,
-      invalidateOnRefresh: true,
     },
   });
 
   // Показать sidebar
   burgerBtn.addEventListener("click", () => {
-    mainSection.style.display = "block";
+    document.querySelector("main").classList.remove("active");
     cardsWrap.classList.add("active");
+    document.querySelector("main").style.display = "block";
     topScrl.disable();
 
     tl.to(burgerBtn, { opacity: 0 })
@@ -85,15 +81,20 @@ const sidebar = () => {
     if (maw1440) {
       tl.to(heroWrap, { x: 380 }, "-=1");
     }
+
+    if (maw768) {
+      tl.to(heroWrap, { x: 0 }, "-=1");
+    }
   });
 
   // Скрыть sidebar
   sidebarCloseBtn.addEventListener("click", () => {
     if (cardsWrap) {
+      document.querySelector("main").style.display = "none";
       topScrl.enable();
-      mainSection.style.display = "none";
       cardsWrap.classList.remove("active");
     }
+
     tl.to(".sidebar__close", { duration: 0.5, rotate: 90 })
       .to(sidebar, { duration: 0.5, x: "-101%" })
       .to(".sidebar__close", { duration: 0.5, rotate: 0 })
@@ -103,15 +104,14 @@ const sidebar = () => {
   });
 
   if (maw1200) {
-    topScrl.disable();
     mainSection.style.display = "block";
+    topScrl.disable();
     const cardsMobSlider = new Swiper(".cards-mobile__slider", {
-      slidesPerView: 3,
-      centeredSlides: true,
-      spaceBetween: 30,
+      slidesPerView: 1,
       loop: true,
+      spaceBetween: 60,
       autoplay: {
-        delay: 2000,
+        delay: 5000,
       },
       pagination: {
         el: ".cards-pagination",
@@ -120,9 +120,7 @@ const sidebar = () => {
     });
 
     tl.to(heroWrap, { x: 0 });
-
     gsap.to(heroTitle, { yPercent: 0, xPercent: 0 });
-
     gsap.to(heroSuptitle, {
       opacity: 0,
       scrollTrigger: {

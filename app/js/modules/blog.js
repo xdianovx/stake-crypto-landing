@@ -14,7 +14,8 @@ const blog = () => {
     pin: true,
     start: "top 50px",
     end: "bottom 400px",
-    pinSpacing: false,
+    // pinSpacing: true,
+    // markers: true,
   });
 
   if (maw1200) {
