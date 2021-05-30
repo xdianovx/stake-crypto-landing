@@ -50,9 +50,7 @@
   margin-top: 37px;
   max-width: 650px;
   margin-left: 193px;
-
 }
-
 
 .beginning {
   position: relative;
@@ -72,28 +70,86 @@
 }
 
 .what-we-do {
+  display: none;
   padding-top: 153px;
   position: relative;
   overflow-x: hidden;
-
 }
 
-
 .what-we-do__subtitle {
-
 }
 
 .what-we-do__marquee {
   width: 120%;
   position: absolute;
-  top: 72px;
+  top: 50px;
   -webkit-text-stroke: 1px rgba(84, 85, 124, 0.53);
   -webkit-text-fill-color: transparent;
   font-weight: 300;
-font-size: 177px;
+  font-size: 177px;
 }
 
 .what-we-do__text {
   max-width: 784px;
   margin-top: 23px;
+}
+
+@media screen and (max-width: 1440px) {
+  .about__subtitle {
+    margin-top: 15px;
+  }
+
+  .about__text {
+    margin-top: 15px;
+  }
+
+  .about__icons {
+    margin-top: 50px;
+  }
+
+  .about__icons .swiper-slide {
+    max-width: 120px;
+  }
+
+  .about__running {
+    margin-top: 30px;
+    font-size: 160px;
+    line-height: 170px;
+  }
+
+  .about__title_h3 {
+    margin-top: 30px;
+  }
+
+  .about__text_beginning {
+    margin-top: 30px;
+  }
+
+  .beginning__year {
+    font-size: 100px;
+  }
+
+  .what-we-do__marquee {
+    font-size: 156px;
+  }
+
+  .what-we-do__text {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .beginning {
+    text-align: center;
+    max-width: 794px;
+    margin: 134px auto 0;
+  }
+  .about__text_beginning {
+    margin-left: 0;
+  }
+
+  .what-we-do__marquee {
+    width: 100%;
+    display: none;
+  }
 }

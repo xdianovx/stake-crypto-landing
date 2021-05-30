@@ -10,7 +10,7 @@
 
   <body>
     <!-- Header start -->
-    <header class="header">
+    <header class="header header-top">
       <div class="header__burger"></div>
       <a href="#" class="logo header__logo">
         <img src="./img/logo.svg" alt="Stake service" />
@@ -54,12 +54,590 @@
     <!-- Sidebar end -->
 
     <section class="card-page">
-      <div class="container">
+      <div class="card-container container">
         <a href="index.html" class="backlink card-page__backlink"
           >back to networks</a
         >
         <!-- Card Start -->
-        <div class="card-item"></div>
+        <div class="card-item">
+          <div class="card-item__head">
+            <div class="card-item__logo">
+              <div class="card-item__logo_img">
+                <img src="./img/card_icon.svg" alt="" />
+              </div>
+              <div class="card-item__logo_name">Solana</div>
+            </div>
+            <a href="#" class="card-item__link">stake now</a>
+          </div>
+
+          <div class="card-item__subtext">
+            <p>Our Total Stake: 15,345,165</p>
+            <p>Delegators: 484</p>
+          </div>
+
+          <div class="card-item__row">
+            <div class="card-item__row_card card-item__item">
+              <p class="card-item__row_card_per">12.9<span>%</span></p>
+              <p class="card-item__row_card_text">Nominal Reward APY</p>
+              <div class="card-item__row_card-part">
+                <img src="./img/part-1.svg" alt="" />
+              </div>
+            </div>
+
+            <div class="card-item__row_card card-item__item">
+              <p class="card-item__row_card_per">8.0<span>%</span></p>
+              <p class="card-item__row_card_text">Staking Comission</p>
+              <div class="card-item__row_card-part">
+                <img src="./img/part-2.svg" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-item__row card-item__row_info">
+            <div class="card-item__item card-item__info">
+              <div class="card-item__info_item">
+                <h3>Layer 1</h3>
+                <p>Protocol Category</p>
+              </div>
+
+              <div class="card-item__info_item">
+                <h3>DPos</h3>
+                <p>Staking Type</p>
+              </div>
+
+              <div class="card-item__info_item">
+                <h3>Validator vote</h3>
+                <p>Governance</p>
+              </div>
+            </div>
+
+            <div class="card-item__item card-item__validator">
+              <h3>Validator Address</h3>
+              <div class="card-item__validator_input">
+                <input
+                  type="text"
+                  value="DumiCKHVqoCQKD8roLApzR5Fit8qvV5fVQsJV9sTZk4a"
+                />
+                <button>COPY</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-item__row card-item__text">
+            <div class="card-item__item">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in
+              </p>
+            </div>
+            <div class="card-item__item">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in
+              </p>
+            </div>
+          </div>
+
+          <h2>Solana Staking Tutorial</h2>
+
+          <div class="card-item__row card-item__row_tutorials">
+            <div class="card-item__item">
+              <div class="card-item__tutorial">
+                <div class="card-item__tutorial_img">
+                  <img src="./img/cart-item-tutorial.svg" alt="" />
+                </div>
+                <div class="card-item__tutorial_info">
+                  <h3>HARDWARE WALLET</h3>
+                  <p>Ledger Nano S or X</p>
+                </div>
+              </div>
+
+              <a href="#" class="card-item__tutorial-link">
+                <div class="cart-item__tutorial-link_img">
+                  <img src="./img/card-item-tutorial.svg" alt="Link" />
+                </div>
+                <div class="cart-item__tutorial-link_info">
+                  <h3>Stake SOL Text Tutorial</h3>
+                  <p>via Solflare</p>
+                </div>
+                <div class="cart-item__tutorial-link_arr">
+                  <img src="./img/btn-arr.svg" alt="" />
+                </div>
+              </a>
+            </div>
+
+            <div class="card-item__item">
+              <div class="card-item__tutorial">
+                <div class="card-item__tutorial_img">
+                  <img src="./img/cart-item-tutorial-1.svg" alt="" />
+                </div>
+                <div class="card-item__tutorial_info">
+                  <h3>SOFTWARE WALLET</h3>
+                  <p>via Solflare Wallet</p>
+                </div>
+              </div>
+
+              <a href="#" class="card-item__tutorial-link">
+                <div class="cart-item__tutorial-link_img">
+                  <img src="./img/card-item-tutorial.svg" alt="Link" />
+                </div>
+                <div class="cart-item__tutorial-link_info">
+                  <h3>Stake SOL Text Tutorial</h3>
+                  <p>via Solflare</p>
+                </div>
+                <div class="cart-item__tutorial-link_arr">
+                  <img src="./img/btn-arr.svg" alt="" />
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <p class="card-item__description">
+            Your SOLs must be in a wallet or custodial account in order to use
+            our staking services.
+          </p>
+
+          <h2>Solana Staking Mechanics</h2>
+
+          <div class="card-item__table">
+            <div class="card-item__table_row">
+              <!-- Item -->
+              <div class="card-item__table_item">
+                <button
+                  class="card-item__table_question"
+                  aria-describedby="tooltip"
+                >
+                  <svg width="7" height="10" viewBox="0 0 7 10">
+                    <path
+                      d="M3.09073 6.82073C3.09073 6.44724 3.15188 6.12045 3.27419 5.84034C3.40591 5.55089 3.56116 5.30812 3.73992 5.11204C3.92809 4.91597 4.17272 4.68254 4.47379 4.41176C4.85013 4.08497 5.12769 3.80485 5.30645 3.57143C5.48522 3.32866 5.5746 3.03921 5.5746 2.70308C5.5746 2.24556 5.39583 1.88142 5.03831 1.61064C4.68078 1.33053 4.18683 1.19048 3.55645 1.19048C2.45565 1.19048 1.61358 1.55929 1.03024 2.29692L0 1.56863C0.395161 1.06443 0.898522 0.676937 1.51008 0.406162C2.13105 0.135387 2.8461 0 3.65524 0C4.68078 0 5.49462 0.224089 6.09677 0.672269C6.69893 1.11111 7 1.71802 7 2.493C7 2.87582 6.93414 3.21662 6.80242 3.51541C6.68011 3.80485 6.52957 4.04762 6.35081 4.2437C6.17204 4.43978 5.93212 4.6732 5.63105 4.94398C5.2453 5.28945 4.95833 5.5929 4.77016 5.85434C4.5914 6.11578 4.50202 6.43791 4.50202 6.82073H3.09073ZM3.81048 10C3.54704 10 3.32594 9.91597 3.14718 9.7479C2.97782 9.57049 2.89315 9.35574 2.89315 9.10364C2.89315 8.85154 2.97782 8.64146 3.14718 8.47339C3.32594 8.29598 3.54704 8.20728 3.81048 8.20728C4.07393 8.20728 4.29032 8.29598 4.45968 8.47339C4.62903 8.64146 4.71371 8.85154 4.71371 9.10364C4.71371 9.35574 4.62433 9.57049 4.44556 9.7479C4.27621 9.91597 4.06452 10 3.81048 10Z"
+                      fill="#717290"
+                    />
+                  </svg>
+                </button>
+                <div class="card-item__table_tooltip" role="tooltip">
+                  <div class="card-item__table_tooltip-close">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L12 12M1 12L12 1"
+                        stroke="#0C0E35"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Your SOLs must be in a wallet or custodial account in order
+                    to use our staking services.Your SOLs must be in a wallet or
+                    custodial account in order to use our staking services.Your
+                    SOLs must be in a wallet or custodial account in order to
+                    use our staking services.
+                  </p>
+                </div>
+                <p class="card-item__table_num">11.9 <span>%</span></p>
+                <p class="card-item__table_text">Nominal Reward APY</p>
+              </div>
+
+              <!-- Item -->
+              <div class="card-item__table_item">
+                <button
+                  class="card-item__table_question"
+                  aria-describedby="tooltip"
+                >
+                  <svg width="7" height="10" viewBox="0 0 7 10">
+                    <path
+                      d="M3.09073 6.82073C3.09073 6.44724 3.15188 6.12045 3.27419 5.84034C3.40591 5.55089 3.56116 5.30812 3.73992 5.11204C3.92809 4.91597 4.17272 4.68254 4.47379 4.41176C4.85013 4.08497 5.12769 3.80485 5.30645 3.57143C5.48522 3.32866 5.5746 3.03921 5.5746 2.70308C5.5746 2.24556 5.39583 1.88142 5.03831 1.61064C4.68078 1.33053 4.18683 1.19048 3.55645 1.19048C2.45565 1.19048 1.61358 1.55929 1.03024 2.29692L0 1.56863C0.395161 1.06443 0.898522 0.676937 1.51008 0.406162C2.13105 0.135387 2.8461 0 3.65524 0C4.68078 0 5.49462 0.224089 6.09677 0.672269C6.69893 1.11111 7 1.71802 7 2.493C7 2.87582 6.93414 3.21662 6.80242 3.51541C6.68011 3.80485 6.52957 4.04762 6.35081 4.2437C6.17204 4.43978 5.93212 4.6732 5.63105 4.94398C5.2453 5.28945 4.95833 5.5929 4.77016 5.85434C4.5914 6.11578 4.50202 6.43791 4.50202 6.82073H3.09073ZM3.81048 10C3.54704 10 3.32594 9.91597 3.14718 9.7479C2.97782 9.57049 2.89315 9.35574 2.89315 9.10364C2.89315 8.85154 2.97782 8.64146 3.14718 8.47339C3.32594 8.29598 3.54704 8.20728 3.81048 8.20728C4.07393 8.20728 4.29032 8.29598 4.45968 8.47339C4.62903 8.64146 4.71371 8.85154 4.71371 9.10364C4.71371 9.35574 4.62433 9.57049 4.44556 9.7479C4.27621 9.91597 4.06452 10 3.81048 10Z"
+                      fill="#717290"
+                    />
+                  </svg>
+                </button>
+                <div class="card-item__table_tooltip" role="tooltip">
+                  <div class="card-item__table_tooltip-close">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L12 12M1 12L12 1"
+                        stroke="#0C0E35"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Your SOLs must be in a wallet or custodial account in order
+                    to use our staking services.Your SOLs must be in a wallet or
+                    custodial account in order to use our staking services.Your
+                    SOLs must be in a wallet or custodial account in order to
+                    use our staking services.
+                  </p>
+                </div>
+                <p class="card-item__table_num">7.84 <span>%</span></p>
+                <p class="card-item__table_text">Nominal Reward APY</p>
+              </div>
+
+              <!-- Item -->
+              <div class="card-item__table_item">
+                <button
+                  class="card-item__table_question"
+                  aria-describedby="tooltip"
+                >
+                  <svg width="7" height="10" viewBox="0 0 7 10">
+                    <path
+                      d="M3.09073 6.82073C3.09073 6.44724 3.15188 6.12045 3.27419 5.84034C3.40591 5.55089 3.56116 5.30812 3.73992 5.11204C3.92809 4.91597 4.17272 4.68254 4.47379 4.41176C4.85013 4.08497 5.12769 3.80485 5.30645 3.57143C5.48522 3.32866 5.5746 3.03921 5.5746 2.70308C5.5746 2.24556 5.39583 1.88142 5.03831 1.61064C4.68078 1.33053 4.18683 1.19048 3.55645 1.19048C2.45565 1.19048 1.61358 1.55929 1.03024 2.29692L0 1.56863C0.395161 1.06443 0.898522 0.676937 1.51008 0.406162C2.13105 0.135387 2.8461 0 3.65524 0C4.68078 0 5.49462 0.224089 6.09677 0.672269C6.69893 1.11111 7 1.71802 7 2.493C7 2.87582 6.93414 3.21662 6.80242 3.51541C6.68011 3.80485 6.52957 4.04762 6.35081 4.2437C6.17204 4.43978 5.93212 4.6732 5.63105 4.94398C5.2453 5.28945 4.95833 5.5929 4.77016 5.85434C4.5914 6.11578 4.50202 6.43791 4.50202 6.82073H3.09073ZM3.81048 10C3.54704 10 3.32594 9.91597 3.14718 9.7479C2.97782 9.57049 2.89315 9.35574 2.89315 9.10364C2.89315 8.85154 2.97782 8.64146 3.14718 8.47339C3.32594 8.29598 3.54704 8.20728 3.81048 8.20728C4.07393 8.20728 4.29032 8.29598 4.45968 8.47339C4.62903 8.64146 4.71371 8.85154 4.71371 9.10364C4.71371 9.35574 4.62433 9.57049 4.44556 9.7479C4.27621 9.91597 4.06452 10 3.81048 10Z"
+                      fill="#717290"
+                    />
+                  </svg>
+                </button>
+                <div class="card-item__table_tooltip" role="tooltip">
+                  <div class="card-item__table_tooltip-close">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L12 12M1 12L12 1"
+                        stroke="#0C0E35"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Your SOLs must be in a wallet or custodial account in order
+                    to use our staking services.Your SOLs must be in a wallet or
+                    custodial account in order to use our staking services.Your
+                    SOLs must be in a wallet or custodial account in order to
+                    use our staking services.
+                  </p>
+                </div>
+                <p class="card-item__table_num">4.06 <span>%</span></p>
+                <p class="card-item__table_text">Real Reward APY</p>
+              </div>
+
+              <!-- Item -->
+              <div class="card-item__table_item">
+                <button
+                  class="card-item__table_question"
+                  aria-describedby="tooltip"
+                >
+                  <svg width="7" height="10" viewBox="0 0 7 10">
+                    <path
+                      d="M3.09073 6.82073C3.09073 6.44724 3.15188 6.12045 3.27419 5.84034C3.40591 5.55089 3.56116 5.30812 3.73992 5.11204C3.92809 4.91597 4.17272 4.68254 4.47379 4.41176C4.85013 4.08497 5.12769 3.80485 5.30645 3.57143C5.48522 3.32866 5.5746 3.03921 5.5746 2.70308C5.5746 2.24556 5.39583 1.88142 5.03831 1.61064C4.68078 1.33053 4.18683 1.19048 3.55645 1.19048C2.45565 1.19048 1.61358 1.55929 1.03024 2.29692L0 1.56863C0.395161 1.06443 0.898522 0.676937 1.51008 0.406162C2.13105 0.135387 2.8461 0 3.65524 0C4.68078 0 5.49462 0.224089 6.09677 0.672269C6.69893 1.11111 7 1.71802 7 2.493C7 2.87582 6.93414 3.21662 6.80242 3.51541C6.68011 3.80485 6.52957 4.04762 6.35081 4.2437C6.17204 4.43978 5.93212 4.6732 5.63105 4.94398C5.2453 5.28945 4.95833 5.5929 4.77016 5.85434C4.5914 6.11578 4.50202 6.43791 4.50202 6.82073H3.09073ZM3.81048 10C3.54704 10 3.32594 9.91597 3.14718 9.7479C2.97782 9.57049 2.89315 9.35574 2.89315 9.10364C2.89315 8.85154 2.97782 8.64146 3.14718 8.47339C3.32594 8.29598 3.54704 8.20728 3.81048 8.20728C4.07393 8.20728 4.29032 8.29598 4.45968 8.47339C4.62903 8.64146 4.71371 8.85154 4.71371 9.10364C4.71371 9.35574 4.62433 9.57049 4.44556 9.7479C4.27621 9.91597 4.06452 10 3.81048 10Z"
+                      fill="#717290"
+                    />
+                  </svg>
+                </button>
+                <div class="card-item__table_tooltip" role="tooltip">
+                  <div class="card-item__table_tooltip-close">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L12 12M1 12L12 1"
+                        stroke="#0C0E35"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Your SOLs must be in a wallet or custodial account in order
+                    to use our staking services.Your SOLs must be in a wallet or
+                    custodial account in order to use our staking services.Your
+                    SOLs must be in a wallet or custodial account in order to
+                    use our staking services.
+                  </p>
+                </div>
+                <p class="card-item__table_num">Nominal Reward APY</p>
+                <p class="card-item__table_text">Reward Frequency</p>
+              </div>
+
+              <!-- Item -->
+              <div class="card-item__table_item">
+                <button
+                  class="card-item__table_question"
+                  aria-describedby="tooltip"
+                >
+                  <svg width="7" height="10" viewBox="0 0 7 10">
+                    <path
+                      d="M3.09073 6.82073C3.09073 6.44724 3.15188 6.12045 3.27419 5.84034C3.40591 5.55089 3.56116 5.30812 3.73992 5.11204C3.92809 4.91597 4.17272 4.68254 4.47379 4.41176C4.85013 4.08497 5.12769 3.80485 5.30645 3.57143C5.48522 3.32866 5.5746 3.03921 5.5746 2.70308C5.5746 2.24556 5.39583 1.88142 5.03831 1.61064C4.68078 1.33053 4.18683 1.19048 3.55645 1.19048C2.45565 1.19048 1.61358 1.55929 1.03024 2.29692L0 1.56863C0.395161 1.06443 0.898522 0.676937 1.51008 0.406162C2.13105 0.135387 2.8461 0 3.65524 0C4.68078 0 5.49462 0.224089 6.09677 0.672269C6.69893 1.11111 7 1.71802 7 2.493C7 2.87582 6.93414 3.21662 6.80242 3.51541C6.68011 3.80485 6.52957 4.04762 6.35081 4.2437C6.17204 4.43978 5.93212 4.6732 5.63105 4.94398C5.2453 5.28945 4.95833 5.5929 4.77016 5.85434C4.5914 6.11578 4.50202 6.43791 4.50202 6.82073H3.09073ZM3.81048 10C3.54704 10 3.32594 9.91597 3.14718 9.7479C2.97782 9.57049 2.89315 9.35574 2.89315 9.10364C2.89315 8.85154 2.97782 8.64146 3.14718 8.47339C3.32594 8.29598 3.54704 8.20728 3.81048 8.20728C4.07393 8.20728 4.29032 8.29598 4.45968 8.47339C4.62903 8.64146 4.71371 8.85154 4.71371 9.10364C4.71371 9.35574 4.62433 9.57049 4.44556 9.7479C4.27621 9.91597 4.06452 10 3.81048 10Z"
+                      fill="#717290"
+                    />
+                  </svg>
+                </button>
+                <div class="card-item__table_tooltip" role="tooltip">
+                  <div class="card-item__table_tooltip-close">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L12 12M1 12L12 1"
+                        stroke="#0C0E35"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Your SOLs must be in a wallet or custodial account in order
+                    to use our staking services.Your SOLs must be in a wallet or
+                    custodial account in order to use our staking services.Your
+                    SOLs must be in a wallet or custodial account in order to
+                    use our staking services.
+                  </p>
+                </div>
+                <p class="card-item__table_num">2,5 days</p>
+                <p class="card-item__table_text">Reward Frequency</p>
+              </div>
+            </div>
+
+            <div class="card-item__table_row">
+              <!-- Item -->
+              <div class="card-item__table_item">
+                <button
+                  class="card-item__table_question"
+                  aria-describedby="tooltip"
+                >
+                  <svg width="7" height="10" viewBox="0 0 7 10">
+                    <path
+                      d="M3.09073 6.82073C3.09073 6.44724 3.15188 6.12045 3.27419 5.84034C3.40591 5.55089 3.56116 5.30812 3.73992 5.11204C3.92809 4.91597 4.17272 4.68254 4.47379 4.41176C4.85013 4.08497 5.12769 3.80485 5.30645 3.57143C5.48522 3.32866 5.5746 3.03921 5.5746 2.70308C5.5746 2.24556 5.39583 1.88142 5.03831 1.61064C4.68078 1.33053 4.18683 1.19048 3.55645 1.19048C2.45565 1.19048 1.61358 1.55929 1.03024 2.29692L0 1.56863C0.395161 1.06443 0.898522 0.676937 1.51008 0.406162C2.13105 0.135387 2.8461 0 3.65524 0C4.68078 0 5.49462 0.224089 6.09677 0.672269C6.69893 1.11111 7 1.71802 7 2.493C7 2.87582 6.93414 3.21662 6.80242 3.51541C6.68011 3.80485 6.52957 4.04762 6.35081 4.2437C6.17204 4.43978 5.93212 4.6732 5.63105 4.94398C5.2453 5.28945 4.95833 5.5929 4.77016 5.85434C4.5914 6.11578 4.50202 6.43791 4.50202 6.82073H3.09073ZM3.81048 10C3.54704 10 3.32594 9.91597 3.14718 9.7479C2.97782 9.57049 2.89315 9.35574 2.89315 9.10364C2.89315 8.85154 2.97782 8.64146 3.14718 8.47339C3.32594 8.29598 3.54704 8.20728 3.81048 8.20728C4.07393 8.20728 4.29032 8.29598 4.45968 8.47339C4.62903 8.64146 4.71371 8.85154 4.71371 9.10364C4.71371 9.35574 4.62433 9.57049 4.44556 9.7479C4.27621 9.91597 4.06452 10 3.81048 10Z"
+                      fill="#717290"
+                    />
+                  </svg>
+                </button>
+                <div class="card-item__table_tooltip" role="tooltip">
+                  <div class="card-item__table_tooltip-close">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L12 12M1 12L12 1"
+                        stroke="#0C0E35"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Your SOLs must be in a wallet or custodial account in order
+                    to use our staking services.Your SOLs must be in a wallet or
+                    custodial account in order to use our staking services.Your
+                    SOLs must be in a wallet or custodial account in order to
+                    use our staking services.
+                  </p>
+                </div>
+                <p class="card-item__table_num">2,5 days</p>
+                <p class="card-item__table_text">Activation Period</p>
+              </div>
+
+              <!-- Item -->
+              <div class="card-item__table_item">
+                <button
+                  class="card-item__table_question"
+                  aria-describedby="tooltip"
+                >
+                  <svg width="7" height="10" viewBox="0 0 7 10">
+                    <path
+                      d="M3.09073 6.82073C3.09073 6.44724 3.15188 6.12045 3.27419 5.84034C3.40591 5.55089 3.56116 5.30812 3.73992 5.11204C3.92809 4.91597 4.17272 4.68254 4.47379 4.41176C4.85013 4.08497 5.12769 3.80485 5.30645 3.57143C5.48522 3.32866 5.5746 3.03921 5.5746 2.70308C5.5746 2.24556 5.39583 1.88142 5.03831 1.61064C4.68078 1.33053 4.18683 1.19048 3.55645 1.19048C2.45565 1.19048 1.61358 1.55929 1.03024 2.29692L0 1.56863C0.395161 1.06443 0.898522 0.676937 1.51008 0.406162C2.13105 0.135387 2.8461 0 3.65524 0C4.68078 0 5.49462 0.224089 6.09677 0.672269C6.69893 1.11111 7 1.71802 7 2.493C7 2.87582 6.93414 3.21662 6.80242 3.51541C6.68011 3.80485 6.52957 4.04762 6.35081 4.2437C6.17204 4.43978 5.93212 4.6732 5.63105 4.94398C5.2453 5.28945 4.95833 5.5929 4.77016 5.85434C4.5914 6.11578 4.50202 6.43791 4.50202 6.82073H3.09073ZM3.81048 10C3.54704 10 3.32594 9.91597 3.14718 9.7479C2.97782 9.57049 2.89315 9.35574 2.89315 9.10364C2.89315 8.85154 2.97782 8.64146 3.14718 8.47339C3.32594 8.29598 3.54704 8.20728 3.81048 8.20728C4.07393 8.20728 4.29032 8.29598 4.45968 8.47339C4.62903 8.64146 4.71371 8.85154 4.71371 9.10364C4.71371 9.35574 4.62433 9.57049 4.44556 9.7479C4.27621 9.91597 4.06452 10 3.81048 10Z"
+                      fill="#717290"
+                    />
+                  </svg>
+                </button>
+                <div class="card-item__table_tooltip" role="tooltip">
+                  <div class="card-item__table_tooltip-close">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L12 12M1 12L12 1"
+                        stroke="#0C0E35"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Your SOLs must be in a wallet or custodial account in order
+                    to use our staking services.Your SOLs must be in a wallet or
+                    custodial account in order to use our staking services.Your
+                    SOLs must be in a wallet or custodial account in order to
+                    use our staking services.
+                  </p>
+                </div>
+                <p class="card-item__table_num">2,5 days</p>
+                <p class="card-item__table_text">Lockup Period</p>
+              </div>
+
+              <!-- Item -->
+              <div class="card-item__table_item">
+                <button
+                  class="card-item__table_question"
+                  aria-describedby="tooltip"
+                >
+                  <svg width="7" height="10" viewBox="0 0 7 10">
+                    <path
+                      d="M3.09073 6.82073C3.09073 6.44724 3.15188 6.12045 3.27419 5.84034C3.40591 5.55089 3.56116 5.30812 3.73992 5.11204C3.92809 4.91597 4.17272 4.68254 4.47379 4.41176C4.85013 4.08497 5.12769 3.80485 5.30645 3.57143C5.48522 3.32866 5.5746 3.03921 5.5746 2.70308C5.5746 2.24556 5.39583 1.88142 5.03831 1.61064C4.68078 1.33053 4.18683 1.19048 3.55645 1.19048C2.45565 1.19048 1.61358 1.55929 1.03024 2.29692L0 1.56863C0.395161 1.06443 0.898522 0.676937 1.51008 0.406162C2.13105 0.135387 2.8461 0 3.65524 0C4.68078 0 5.49462 0.224089 6.09677 0.672269C6.69893 1.11111 7 1.71802 7 2.493C7 2.87582 6.93414 3.21662 6.80242 3.51541C6.68011 3.80485 6.52957 4.04762 6.35081 4.2437C6.17204 4.43978 5.93212 4.6732 5.63105 4.94398C5.2453 5.28945 4.95833 5.5929 4.77016 5.85434C4.5914 6.11578 4.50202 6.43791 4.50202 6.82073H3.09073ZM3.81048 10C3.54704 10 3.32594 9.91597 3.14718 9.7479C2.97782 9.57049 2.89315 9.35574 2.89315 9.10364C2.89315 8.85154 2.97782 8.64146 3.14718 8.47339C3.32594 8.29598 3.54704 8.20728 3.81048 8.20728C4.07393 8.20728 4.29032 8.29598 4.45968 8.47339C4.62903 8.64146 4.71371 8.85154 4.71371 9.10364C4.71371 9.35574 4.62433 9.57049 4.44556 9.7479C4.27621 9.91597 4.06452 10 3.81048 10Z"
+                      fill="#717290"
+                    />
+                  </svg>
+                </button>
+                <div class="card-item__table_tooltip" role="tooltip">
+                  <div class="card-item__table_tooltip-close">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L12 12M1 12L12 1"
+                        stroke="#0C0E35"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Your SOLs must be in a wallet or custodial account in order
+                    to use our staking services.Your SOLs must be in a wallet or
+                    custodial account in order to use our staking services.Your
+                    SOLs must be in a wallet or custodial account in order to
+                    use our staking services.
+                  </p>
+                </div>
+                <p class="card-item__table_num">AUTO</p>
+                <p class="card-item__table_text">Reward Payout</p>
+              </div>
+
+              <!-- Item -->
+              <div class="card-item__table_item">
+                <button
+                  class="card-item__table_question"
+                  aria-describedby="tooltip"
+                >
+                  <svg width="7" height="10" viewBox="0 0 7 10">
+                    <path
+                      d="M3.09073 6.82073C3.09073 6.44724 3.15188 6.12045 3.27419 5.84034C3.40591 5.55089 3.56116 5.30812 3.73992 5.11204C3.92809 4.91597 4.17272 4.68254 4.47379 4.41176C4.85013 4.08497 5.12769 3.80485 5.30645 3.57143C5.48522 3.32866 5.5746 3.03921 5.5746 2.70308C5.5746 2.24556 5.39583 1.88142 5.03831 1.61064C4.68078 1.33053 4.18683 1.19048 3.55645 1.19048C2.45565 1.19048 1.61358 1.55929 1.03024 2.29692L0 1.56863C0.395161 1.06443 0.898522 0.676937 1.51008 0.406162C2.13105 0.135387 2.8461 0 3.65524 0C4.68078 0 5.49462 0.224089 6.09677 0.672269C6.69893 1.11111 7 1.71802 7 2.493C7 2.87582 6.93414 3.21662 6.80242 3.51541C6.68011 3.80485 6.52957 4.04762 6.35081 4.2437C6.17204 4.43978 5.93212 4.6732 5.63105 4.94398C5.2453 5.28945 4.95833 5.5929 4.77016 5.85434C4.5914 6.11578 4.50202 6.43791 4.50202 6.82073H3.09073ZM3.81048 10C3.54704 10 3.32594 9.91597 3.14718 9.7479C2.97782 9.57049 2.89315 9.35574 2.89315 9.10364C2.89315 8.85154 2.97782 8.64146 3.14718 8.47339C3.32594 8.29598 3.54704 8.20728 3.81048 8.20728C4.07393 8.20728 4.29032 8.29598 4.45968 8.47339C4.62903 8.64146 4.71371 8.85154 4.71371 9.10364C4.71371 9.35574 4.62433 9.57049 4.44556 9.7479C4.27621 9.91597 4.06452 10 3.81048 10Z"
+                      fill="#717290"
+                    />
+                  </svg>
+                </button>
+                <div class="card-item__table_tooltip" role="tooltip">
+                  <div class="card-item__table_tooltip-close">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L12 12M1 12L12 1"
+                        stroke="#0C0E35"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Your SOLs must be in a wallet or custodial account in order
+                    to use our staking services.Your SOLs must be in a wallet or
+                    custodial account in order to use our staking services.Your
+                    SOLs must be in a wallet or custodial account in order to
+                    use our staking services.
+                  </p>
+                </div>
+                <p class="card-item__table_num">AUTO</p>
+                <p class="card-item__table_text">Reward Compounding</p>
+              </div>
+
+              <!-- Item -->
+              <div class="card-item__table_item">
+                <button
+                  class="card-item__table_question"
+                  aria-describedby="tooltip"
+                >
+                  <svg width="7" height="10" viewBox="0 0 7 10">
+                    <path
+                      d="M3.09073 6.82073C3.09073 6.44724 3.15188 6.12045 3.27419 5.84034C3.40591 5.55089 3.56116 5.30812 3.73992 5.11204C3.92809 4.91597 4.17272 4.68254 4.47379 4.41176C4.85013 4.08497 5.12769 3.80485 5.30645 3.57143C5.48522 3.32866 5.5746 3.03921 5.5746 2.70308C5.5746 2.24556 5.39583 1.88142 5.03831 1.61064C4.68078 1.33053 4.18683 1.19048 3.55645 1.19048C2.45565 1.19048 1.61358 1.55929 1.03024 2.29692L0 1.56863C0.395161 1.06443 0.898522 0.676937 1.51008 0.406162C2.13105 0.135387 2.8461 0 3.65524 0C4.68078 0 5.49462 0.224089 6.09677 0.672269C6.69893 1.11111 7 1.71802 7 2.493C7 2.87582 6.93414 3.21662 6.80242 3.51541C6.68011 3.80485 6.52957 4.04762 6.35081 4.2437C6.17204 4.43978 5.93212 4.6732 5.63105 4.94398C5.2453 5.28945 4.95833 5.5929 4.77016 5.85434C4.5914 6.11578 4.50202 6.43791 4.50202 6.82073H3.09073ZM3.81048 10C3.54704 10 3.32594 9.91597 3.14718 9.7479C2.97782 9.57049 2.89315 9.35574 2.89315 9.10364C2.89315 8.85154 2.97782 8.64146 3.14718 8.47339C3.32594 8.29598 3.54704 8.20728 3.81048 8.20728C4.07393 8.20728 4.29032 8.29598 4.45968 8.47339C4.62903 8.64146 4.71371 8.85154 4.71371 9.10364C4.71371 9.35574 4.62433 9.57049 4.44556 9.7479C4.27621 9.91597 4.06452 10 3.81048 10Z"
+                      fill="#717290"
+                    />
+                  </svg>
+                </button>
+                <div class="card-item__table_tooltip" role="tooltip">
+                  <div class="card-item__table_tooltip-close">
+                    <svg
+                      width="13"
+                      height="13"
+                      viewBox="0 0 13 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1L12 12M1 12L12 1"
+                        stroke="#0C0E35"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Your SOLs must be in a wallet or custodial account in order
+                    to use our staking services.Your SOLs must be in a wallet or
+                    custodial account in order to use our staking services.Your
+                    SOLs must be in a wallet or custodial account in order to
+                    use our staking services.
+                  </p>
+                </div>
+                <p class="card-item__table_num">65.9 <span>%</span></p>
+                <p class="card-item__table_text">Reward Frequency</p>
+              </div>
+            </div>
+          </div>
+
+          <h2>Solana Rewards Calculator</h2>
+
+          <div class="card-item__row card-item__row_calculator">
+            <a href="#">How many SOLANA do you have?</a>
+            <p>How many dollars do you want to put in for solana?</p>
+          </div>
+        </div>
         <!-- Card End -->
       </div>
     </section>

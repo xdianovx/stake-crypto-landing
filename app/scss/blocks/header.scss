@@ -8,6 +8,9 @@
   top: 0;
   left: 0;
   z-index: 1;
+  &.header-top {
+    position: absolute;
+  }
 }
 
 .header__burger {
@@ -24,7 +27,7 @@
   }
   &:before,
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     height: 4px;
     border-radius: 4px;
@@ -48,6 +51,21 @@
       animation-iteration-count: 1;
       animation-fill-mode: forwards;
     }
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .header {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
   }
 }
 

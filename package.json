@@ -32,6 +32,7 @@
     "webpack-stream": "^6.1.2"
   },
   "dependencies": {
+    "@popperjs/core": "^2.9.2",
     "choices.js": "^9.0.1",
     "gsap": "^3.6.1",
     "rangeslider-js": "^3.2.5",

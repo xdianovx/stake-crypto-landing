@@ -1,33 +1,35 @@
 // Plugins
-import VanillaTilt from 'vanilla-tilt'
-import Choices from 'choices.js'
-import rangesliderJs from 'rangeslider-js'
-
+import VanillaTilt from "vanilla-tilt";
+import Choices from "choices.js";
+import rangesliderJs from "rangeslider-js";
 
 // Blocks
-import sidebar from './modules/sidebar'
-import about from './modules/about'
-import blog from './modules/blog'
-import navScroll from './modules/nav_scroll'
-import card from './modules/card'
-import cardsSection from './modules/cards_section'
+import sidebar from "./modules/sidebar";
+import about from "./modules/about";
+import blog from "./modules/blog";
+import navScroll from "./modules/nav_scroll";
+import card from "./modules/card";
+import cardsSection from "./modules/cards_section";
 
-cardsSection()
-sidebar()
-about()
-blog()
-navScroll()
-card()
+window.addEventListener("DOMContentLoaded", () => {
+  sidebar();
+  about();
+  card();
+  cardsSection();
+  blog();
+  navScroll();
+  document.querySelector("main").style.display = "none";
+});
 
 VanillaTilt.init(document.querySelector(".beginning__img"), {
-    max: 15,
-    speed: 400
+  max: 15,
+  speed: 400,
 });
 
-const element = document.querySelector('.calculator-select');
+const element = document.querySelector(".calculator-select");
 const choices = new Choices(element, {
-    searchEnabled: false
+  searchEnabled: false,
 });
 
-const calcucatorRange = document.querySelector('.calculator-range')
-rangesliderJs.create(calcucatorRange)
+const calcucatorRange = document.querySelector(".calculator-range");
+rangesliderJs.create(calcucatorRange);
